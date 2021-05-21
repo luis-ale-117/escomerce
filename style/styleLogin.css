@@ -3,6 +3,7 @@
     border: 5px;
     background-color: aliceblue;    
     width: 25%;
+    min-width: 270px;
     margin: auto;
 }
 #titu{
