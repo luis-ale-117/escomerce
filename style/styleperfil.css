@@ -105,7 +105,16 @@ button:hover {
     margin:0 .5rem .5rem .5rem;
 }
 
+    .foto-container{
+        text-align: center;
+        width: 30%;
+        left: 0;
+        border-color: aliceblue;
+        border-
+    }
+
   /*--imagen de perfil--*/
+
   .perfil-image{
     width: 200px;
     height: 200px;
@@ -181,11 +190,6 @@ button:hover {
     background-size: cover;
 }
 /*==============fin MENU==================*/
-
-/*IGNORAR POR EL MOMENTO*/
-#sidebar {
-    grid-area: sidebar;
-}
 
 
 #footer_container {
