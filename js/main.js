@@ -10,7 +10,7 @@ function sumaIntegrantes(val1,val2) {
 }
 //Funcion para hacer conteo de miembros
 function countMem(numMem){
-    var ul = document.getElementById("miembros");
+    var ul = document.getElementById("base_Footer_miembros");
     var i=0, itemCount =0;
     while(ul.getElementsByTagName('li') [i++]) itemCount++;
     document.getElementById("numIntegrantes").innerHTML ="Hay " + itemCount + " de " + numMem + " Integrantes registrados:";
