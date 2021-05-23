@@ -95,7 +95,7 @@ button:hover {
 }
 /*=============== CONTENIDO ==================*/
 /*================= MAIN ==================*/
-#main_container {
+.main_container {
     color: aliceblue;
     grid-area: main;
     box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
@@ -183,7 +183,7 @@ button:hover {
 /*==============fin MENU==================*/
 
 /*IGNORAR POR EL MOMENTO*/
-#sidebar {
+.sidebar {
     grid-area: sidebar;
 }
 
