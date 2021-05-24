@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="./img/LOGO.png">
-    <link rel="stylesheet" href="./style/styleBase.css"><!--Estilos base que tambien usare-->
-    <link rel="stylesheet" href="./style/stylePerfilUsuario.css"><!--Estilos de esta vista-->
+    <link rel="stylesheet" href="./style/styleBase.css">
     <title>ESCOMERCE</title>
 </head>
-<body id="index_body_container" class="body_container">
-    <header id="index_header_container" class="header_container"></header>
+<body id="base_body_container" class="body_container">
+    <header id="base_header_container" class="header_container"></header>
 
     <!--Barra de Navegacion-->
     <!--Nombres id(NO SE REPITE): nombreDeLaVista_NombreCajitaPadre_NombreCajita_-->
     <!--Ej: id: base_navbar_container_-->
-    <nav id="index_navbar_container" class="navbar_container">
+    <nav id="base_navbar_container" class="navbar_container">
         <div class="logo_container">
             <img class="logo" src="./img/LOGO.png" alt="EscomerceLogo">
             <img class="logo_letters" src="./img/LETRAS LOGO.png" alt="EscomerceLetras">
@@ -24,26 +23,14 @@
         <ul class="navbar_links">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./login.html">Perfil</a></li>
-            <li><a href="./perfilUsuario.html">Mi cuenta</a></li>
             <li><a href="#">Algo</a></li>
             <li><a href="#">Mas</a></li>
         </ul>
         <a class="head_cta" href="#"><button class="button_Carrito"><i class="far fa-shopping-cart"></i>  Carrito</button></a>
     </nav>
     <!--Vistas-->
-    <article id="index_main_container" class="main_container">
+    <article id="base_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <nav id="container_opciones_lateral" class="opciones_lateral">
-            <ul>
-                <li><a href="./perfilUsuario.html">Mis datos</a></li>
-                <li><a href="#">Mis direcciones</a></li>
-                <li><a href="#">Mis metodos de pago</a></li>
-                <li><a href="#">Mis compras</a></li>
-                <li><a href="./aunNoVendo.html">Mis ventas</a></li><!--Hay que modificar si ya vende jeje-->
-                <li><a href="#">Configuracion</a></li>
-            </ul>
-        </nav>
-
         <div id="container_seleccion" class="seleccion">
             <div id="imagen_perfil" class="info_personal_imagen_perfil">
                 <img id="foto_usuario" class="imagen_perfil_foto_usuario" src="./img/chems.jpg" alt="Imagen_perfil">
@@ -64,7 +51,7 @@
     <!--Ignorar por el momento-->
     <aside class ="sidebar"></aside>
     
-    <footer id="index_footer_container" class="footer_container">
+    <footer id="base_footer_container" class="footer_container">
         <div class="foot_cta">
             <h3>Integrantes:</h3>
             <p id="numIntegrantes"></p>
