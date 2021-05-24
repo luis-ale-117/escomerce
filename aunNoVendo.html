@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="./img/LOGO.png">
     <link rel="stylesheet" href="./style/styleBase.css"><!--Estilos base que tambien usare-->
-    <link rel="stylesheet" href="./style/stylePerfilUsuario.css"><!--Estilos de esta vista-->
+    <link rel="stylesheet" href="./style/styleAunNoVendo.css"><!--Estilos de esta vista-->
     <title>ESCOMERCE</title>
 </head>
 <body id="index_body_container" class="body_container">
@@ -45,18 +45,14 @@
         </nav>
 
         <div id="container_seleccion" class="seleccion">
-            <div id="imagen_perfil" class="info_personal_imagen_perfil">
-                <img id="foto_usuario" class="imagen_perfil_foto_usuario" src="./img/chems.jpg" alt="Imagen_perfil">
+            <div id="imagen_no_vendo" class="mis_ventas_imagen_no_vendo">
+                <img id="img_advertencia" class="mis_ventas_img_advertencia" src="./img/warning.png" alt="Aun_no_vendes">
             </div>
-            <div id="datos_usuario" class="info_personal_datos_usuario">
-                <ul>                    
-                    <li>Usuario: El Chems 7u7</li>
-                    <li>Estatus: Cliente</li>
-                    <li>Correo: chems@perrrito.com</li>
-                    <li>Boleta: 2020999888</li>
-                    <li>Escuela: De la vida</li>
-                    <li>Miembro desde: 31 de febrero de 2019</li>                
-                </ul>
+            <div id="aviso_no_vendes" class="mis_ventas_aviso_no_vendes">
+                <h2>Vaya, parece que aún no te registras como vendedor</h2>
+                <form action="">
+                    <input type="submit" value="Quiero Vender!!" onclick="alert('Llena el registro para Vender')">
+                </form>
             </div>
         </div>
     </article>
