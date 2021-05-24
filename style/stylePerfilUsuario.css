@@ -19,3 +19,20 @@
     color: aqua;   
 }
 
+.seleccion{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info_personal_imagen_perfil{
+    width: 20%;
+}
+.imagen_perfil_foto_usuario{
+    width: 100%;
+}
+
+.info_personal_datos_usuario{
+    width: 100%;
+}
