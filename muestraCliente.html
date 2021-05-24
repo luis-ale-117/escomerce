@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="./img/LOGO.png">
     <link rel="stylesheet" href="./style/styleBase.css">
+    <link rel="stylesheet" href="./style/styleMuestraVendedor.css">
     <title>ESCOMERCE</title>
 </head>
 <body id="base_body_container" class="body_container">
@@ -23,6 +24,7 @@
         <ul class="navbar_links">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./login.html">Perfil</a></li>
+            <li><a href="./perfilUsuario.html">Mi cuenta</a></li>
             <li><a href="#">Algo</a></li>
             <li><a href="#">Mas</a></li>
         </ul>
@@ -31,19 +33,38 @@
     <!--Vistas-->
     <article id="base_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <div id="container_seleccion" class="seleccion">
-            <div id="imagen_perfil" class="info_personal_imagen_perfil">
-                <img id="foto_usuario" class="imagen_perfil_foto_usuario" src="./img/chems.jpg" alt="Imagen_perfil">
+        <div id="container_info_vendedor" class="info_vendedor">
+            <div id="imagen_vendedor" class="info_vendedor_imagen_vendedor">
+                <img id="foto_vendedor" class="img_foto_vendedor" src="./img/hank_feliz.jpg" alt="imagen_vendedor">
             </div>
-            <div id="datos_usuario" class="info_personal_datos_usuario">
+            <div id="calf_vendedor" class="info_vendedor_calf_vendedor">
+                <h3>Calificación</h3>
+                <img id="calificacion" class="img_calificacion" src="./img/calf_estrellas.jpg" alt="Calificacion_del_vendedor">
+            </div>
+            <div id="datos_vendedor" class="info_vendedor_datos_vendedor">
+                <h3>Información del vendedor</h3>
                 <ul>                    
-                    <li>Usuario: El Chems 7u7</li>
-                    <li>Estatus: Cliente</li>
-                    <li>Correo: chems@perrrito.com</li>
-                    <li>Boleta: 2020999888</li>
-                    <li>Escuela: De la vida</li>
-                    <li>Miembro desde: 31 de febrero de 2019</li>                
+                    <li>Vendedor: Hank feliz 7u7</li>                    
+                    <li>Contanctos:</li>
+                        <ul>
+                            <li>hank@police.com</li>
+                            <li>5599887766</li>
+                        </ul>
+                    <li>Escuela: Howards</li>
+                    <li>Miembro desde: 0.5 de enero de 2099</li>
                 </ul>
+            </div>            
+            <div id="sus_productos" class="info_vendedor_sus_productos">
+                <h3>Más de sus productos</h3>
+                <ol>
+                    <li>Peines</li>
+                    <li>Shampoo</li>
+                </ol>
+            </div>
+            <div id="comentarios_vendedor" class="info_vendedor_comentarios_vendedor">
+                <h3>Comentarios</h3>
+                <p>Manu: Super vendedor osiosi</p>
+                <p>Cristian: No me llego nada >:v</p>
             </div>
         </div>
     </article>
