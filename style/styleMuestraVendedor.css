@@ -1,0 +1,39 @@
+/*Cajita de todo lo del vendedor*/
+.info_vendedor{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*Para la cajita de la imagen del vendedor*/
+.info_vendedor_imagen_vendedor{
+    width: 30%;
+}
+.img_foto_vendedor{
+    width: 100%;
+}
+
+/*Para la calificacion del vendedor*/
+.info_vendedor_calf_vendedor{
+    width: 20%;
+}
+.img_calificacion{
+    width: 100%;
+}
+
+/*Para sus datos*/
+.info_vendedor_datos_vendedor{
+    width: 100%;
+    background-color: cornflowerblue;
+}
+/*Para otros productos del vendedor*/
+.info_vendedor_sus_productos{
+    width: 100%;
+    background-color:rgb(88, 122, 185) ;
+}
+/*Para los comentarios del vendedor*/
+.info_vendedor_comentarios_vendedor{
+    width: 100%;
+    background-color: rgb(90, 128, 163);
+}
