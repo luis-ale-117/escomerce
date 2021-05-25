@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="./img/LOGO.png">
     <link rel="stylesheet" href="./style/styleBase.css">
+    <link rel="stylesheet" href="./style/styleMuestraCliente.css">
     <title>ESCOMERCE</title>
 </head>
-<body id="index_body_container" class="body_container">
-    <header id="index_header_container" class="header_container"></header>
+<body id="base_body_container" class="body_container">
+    <header id="base_header_container" class="header_container"></header>
 
     <!--Barra de Navegacion-->
     <!--Nombres id(NO SE REPITE): nombreDeLaVista_NombreCajitaPadre_NombreCajita_-->
     <!--Ej: id: base_navbar_container_-->
-    <nav id="index_navbar_container" class="navbar_container">
+    <nav id="base_navbar_container" class="navbar_container">
         <div class="logo_container">
             <img class="logo" src="./img/LOGO.png" alt="EscomerceLogo">
             <img class="logo_letters" src="./img/LETRAS LOGO.png" alt="EscomerceLetras">
@@ -30,19 +31,32 @@
         <a class="head_cta" href="#"><button class="button_Carrito"><i class="far fa-shopping-cart"></i>  Carrito</button></a>
     </nav>
     <!--Vistas-->
-    <article id="index_main_container" class="main_container">
+    <article id="base_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <h1>Main</h1>
-        <ol>
-            <li><a href="./muestraVendedor.html">¿Cómo se ve un vendedor para un usuario?</a></li>
-            <li><a href="./muestraCliente.html">¿Cómo se ve un cliente para un usuario?</a></li>
-        </ol>
+        <div id="container_info_cliente" class="info_cliente">
+            <div id="imagen_cliente" class="info_cliente_imagen_cliente">
+                <img id="foto_cliente" class="img_foto_cliente" src="./img/miniKeanu.png" alt="imagen_cliente">
+            </div>            
+            <div id="datos_cliente" class="info_cliente_datos_cliente">
+                <h3>Información del cliente</h3>
+                <ul>                    
+                    <li>Cliente: Keanu Reeves chiquito 7u7</li>
+                    <li>Contanctos:</li>
+                        <ul>
+                            <li>neo@matrix.com</li>
+                            <li>010101010101</li>
+                        </ul>
+                    <li>Escuela: De superheroes</li>
+                    <li>Miembro desde: 13 de marzo de 3135</li>
+                </ul>
+            </div>            
+        </div>
     </article>
     
     <!--Ignorar por el momento-->
     <aside class ="sidebar"></aside>
     
-    <footer id="index_footer_container" class="footer_container">
+    <footer id="base_footer_container" class="footer_container">
         <div class="foot_cta">
             <h3>Integrantes:</h3>
             <p id="numIntegrantes"></p>
