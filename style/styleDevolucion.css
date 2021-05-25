@@ -1,0 +1,15 @@
+img{
+    width: 15%;
+    height: auto;
+    float: right;
+    margin-right: 10em;
+}
+#motivo_dev_container{
+    margin-top: 2em;
+}
+#datos_dev_container{
+    text-align:center;
+}
+#motivo{
+    width: 50%;
+}

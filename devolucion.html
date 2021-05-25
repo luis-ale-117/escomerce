@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,10 +32,25 @@
     <!--Vistas-->
     <article id="base_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <h1>Devolucion</h1>
-        <div>
-            
+        <h1 id="titulo">Solicitar devolución</h1>  
+        <div id="datos_dev_container">
+            <img src="/img/proto2.jpg" alt="producto">
+            <h4>Pedido #1211</h4>
+            <h4>Protoboard 134</h4>
+            <h4>Vendedor: Cheems</h4>
+            <h4>Fecha de entrega: 10/05/21</h4>
+        </div>  
+
+        <div id="motivo_dev_container">
+            <p>Describa el motivo de la devolución</p>
+            <input id="motivo" type="text" maxlength="100" name="motivo_dev">
         </div>
+        <div id="botones_dev_container">
+            <input type="submit" value="Enviar información">
+            <input type="submit" value="Cancelar">
+        <div>            
+        </div>
+
     </article>
     
     <!--Ignorar por el momento-->
@@ -58,7 +73,7 @@
         </div>
     </footer>
     <!--Aquí se agregarán los js-->
-    <script src="./js/main.js"></script>
+    <!--script src="./js/main.js"></script-->
 </body>
 <!--Colores https://paletton.com/ -->
 <!--Documentacion 1 https://developer.mozilla.org/es/ -->
