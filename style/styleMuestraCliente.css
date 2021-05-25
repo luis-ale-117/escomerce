@@ -13,10 +13,21 @@ ul {
 
 /*Para la cajita de la imagen del cliente*/
 .info_cliente_imagen_cliente{
-    width: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgb(62, 62, 233);
+    margin-bottom: 10px;
 }
 .img_foto_cliente{
-    width: 100%;
+    display: inline;
+    margin: 0 auto;    
+    height: 100%;
+    width: auto;
 }
 
 /*Para la calificacion del cliente*/
@@ -31,6 +42,7 @@ ul {
 .info_cliente_datos_cliente{
     width: 100%;
     background-color: cornflowerblue;
+    border-radius: 25px;
 }
 /*Para otros productos del cliente*/
 .info_cliente_sus_productos{
