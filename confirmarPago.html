@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="./img/LOGO.png">
     <link rel="stylesheet" href="./style/styleBase.css">
-    <link rel="stylesheet" href="./style/styleLogin.css">
-    <title>LOGIN</title>
+    <link rel="stylesheet" href="./style/styleConfirmarPago.css">
+    <title>ESCOMERCE</title>
 </head>
-<body id="login_body_container" class="body_container">
-    <header id="login_header_container" class="header_container"></header>
+<body id="confirmarPago_body_container" class="body_container">
+    <header id="confirmarPago_header_container" class="header_container"></header>
 
     <!--Barra de Navegacion-->
-    <nav id="base_navbar_container" class="navbar_container">
+    <!--Nombres id(NO SE REPITE): nombreDeLaVista_NombreCajitaPadre_NombreCajita_-->
+    <!--Ej: id: base_navbar_container_-->
+    <nav id="confirmarPago_navbar_container" class="navbar_container">
         <div class="logo_container">
             <img class="logo" src="./img/LOGO.png" alt="EscomerceLogo">
             <img class="logo_letters" src="./img/LETRAS LOGO.png" alt="EscomerceLetras">
@@ -28,32 +30,45 @@
         <a class="head_cta" href="#"><button class="button_Carrito"><i class="far fa-shopping-cart"></i>  Carrito</button></a>
     </nav>
     <!--Vistas-->
-    <article id="login_main_container" class="main_container">
+    <article id="confirmarPago_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <div id="inicioSesion"> <!--Cajita para el inicio de sesion-->
-            <div id="titu"><!--titulo de la cajita-->
-                <h2>Iniciar Sesión</h2>
+        <div id="TituloCP"><h1>Confirmar Pago</h1></div>
+        <div id="main_container_CPsuperior">
+            <div id="CPsuperior_direccion" class="container_format">
+                Direccion de Entrega
             </div>
-            <div id="formulario"><!--Formulario para el inicio de sesion-->
-                <form action="">
-                    <label for="Correo">Correo: </label>
-                    <input type="email" name="Correo" id="correo">
-                    <br>
-                    <label for="Contrasena">Contraseña: </label>
-                    <input type="password" name="Contrasena" id="contrasena">
-                    <br>
-                    <input type="submit" value="Iniciar" onclick="alert('Felicidades!!! Iniciaste sesión buapo ;v')" />
-                </form>
+            <div id="CPsuperior_pago" class="CP_container container_format">
+                <div class=""> Realiza tu pedido y paga </div>
+                
+                <div> 
+                    Resumen del pedido <br>
+                    <table>
+                        
+                    </table>
+
+                </div>
+                <div>
+                    Total
+                </div>
             </div>
-            <div id="sinCuenta">
-                <p>No tengo cuenta</p>                
-                <input type="button" value="Registrarme" onclick="alert('Empieza a registrarte buapo ;v')">
+        </div>
+        <div id="main_container_CPinferior"class="container_format">
+            <div class="CP_productos">
+                <div>Imagen</div>
+                <div>Nombre</div>
+                <div>Costo</div>
+                <div>Metodo de envio</div>
+            </div>
+            <div class="CP_productos">
+                producto 2
             </div>
         </div>
     </article>
-   
-    <!--Pie de página con los datos generales-->
-    <footer id="base_footer_container" class="footer_container">
+    
+    <!--Ignorar por el momento-->
+    <aside class ="sidebar"></aside>
+    
+    <footer id="confirmarPago_footer_container" class="footer_container">
         <div class="foot_cta">
             <h3>Integrantes:</h3>
             <p id="numIntegrantes"></p>
@@ -66,12 +81,13 @@
             </ul>
         </div>
         <div class="copyright">
-            <p>ESCOMERCE &#169 Todos los derechos reservados. 2021. MAMBRU SE FUE A LA GUERRA QUE DOLOR QUE DOLOR QUE PENA UPDATE: 23/05/2021</p>
+            <p>ESCOMERCE &#169 . 2021. Todos los derechos reservados. MAMBRU SE FUE A LA GUERRA QUE DOLOR QUE DOLOR QUE PENA UPDATE: 23/05/2021</p>
         </div>
     </footer>
     <!--Aquí se agregarán los js-->
-    <script src="./js/main.js"></script>
+    <!--<script src="./js/main.js"></script>-->
 </body>
 <!--Colores https://paletton.com/ -->
-<!--Documentacion https://developer.mozilla.org/es/-->
+<!--Documentacion 1 https://developer.mozilla.org/es/ -->
+<!--Documentacion 2 https://www.w3schools.com/ -->    
 </html>
