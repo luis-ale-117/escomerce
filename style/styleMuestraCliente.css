@@ -1,3 +1,8 @@
+/*Correcion de los ul*/
+ul {
+    list-style-position: inside;
+ }
+ 
 /*Cajita de todo lo del cliente*/
 .info_cliente{
     display: flex;
