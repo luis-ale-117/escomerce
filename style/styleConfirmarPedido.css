@@ -6,30 +6,30 @@
         "CPinferior";
         
 }
-#TituloCPedido {
+#TituloConfirmarPedido {
     grid-area: TituloCP;
     min-height: .5rem;
 }
-#main_container_CPedido_superior {
+#main_container_ConfirmarPedido_superior {
     grid-area: CPsuperior;
     display: flex;
     justify-content: space-between;
     margin: .4rem;
 }
 
-#main_container_CPedido_inferior {
+#main_container_ConfirmarPedido_inferior {
     grid-area: CPinferior;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
 }
-#CPedido_superior_direccion {
+#ConfirmarPedido_superior_direccion {
     grid-area: CPdir;
     border: 1px solid rgb(255, 0, 0);
     color: black;
     background-color: rgba(255,255,255,0.3);
 }
-#CPedido_superior_pago {
+#ConfirmarPedido_superior_pago {
     grid-area: CPpago;
     border: 1px solid rgb(90, 80, 80);
     display: flex;
@@ -44,7 +44,7 @@
     padding: .5rem;
 }
 
-.CPedido_productos {
+.ConfirmarPedido_productos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
