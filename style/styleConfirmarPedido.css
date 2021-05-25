@@ -1,4 +1,4 @@
-#confirmarPago_main_container {
+#confirmarPedido_main_container {
     display: grid;
     grid-template-areas:
         "TituloCP"
@@ -6,30 +6,30 @@
         "CPinferior";
         
 }
-#TituloCP {
+#TituloCPedido {
     grid-area: TituloCP;
     min-height: .5rem;
 }
-#main_container_CPsuperior {
+#main_container_CPedido_superior {
     grid-area: CPsuperior;
     display: flex;
     justify-content: space-between;
     margin: .4rem;
 }
 
-#main_container_CPinferior {
+#main_container_CPedido_inferior {
     grid-area: CPinferior;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
 }
-#CPsuperior_direccion {
+#CPedido_superior_direccion {
     grid-area: CPdir;
     border: 1px solid rgb(255, 0, 0);
     color: black;
     background-color: rgba(255,255,255,0.3);
 }
-#CPsuperior_pago {
+#CPedido_superior_pago {
     grid-area: CPpago;
     border: 1px solid rgb(90, 80, 80);
     display: flex;
@@ -44,7 +44,7 @@
     padding: .5rem;
 }
 
-.CP_productos {
+.CPedido_productos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
