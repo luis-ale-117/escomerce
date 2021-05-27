@@ -10,11 +10,12 @@ function sumaIntegrantes(val1, val2) {
     return sumEq;
 }
 //Funcion para hacer conteo de miembros
-function countMem(numMem){
+function countMem(numMem) {
     var ul = document.getElementById("miembros");
-    var i=0, itemCount =0;
-    while(ul.getElementsByTagName('li') [i++]) itemCount++;
-    document.getElementById("numIntegrantes").innerHTML ="Hay " + itemCount + " de " + numMem + " Integrantes registrados:";
+    var i = 0,
+        itemCount = 0;
+    while (ul.getElementsByTagName('li')[i++]) itemCount++;
+    document.getElementById("numIntegrantes").innerHTML = "Hay " + itemCount + " de " + numMem + " Integrantes registrados:";
 }
 
 //Funcion para mostrar las opciones de direcciones
@@ -22,10 +23,9 @@ function showContent() {
     element = document.getElementById("content");
     check = document.getElementById("check");
     if (check.checked) {
-        element.style.display='block';
-    }
-    else {
-        element.style.display='none';
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
     }
 }
 
@@ -35,12 +35,29 @@ function showContent1() {
     element = document.getElementById("content1");
     check = document.getElementById("check1");
     if (check1.checked) {
-        element.style.display='block';
-    }
-    else {
-        element.style.display='none';
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
     }
 }
 
-let integrantes= sumaIntegrantes(m,f);
+function prueba() {
+    alert('OK');
+}
+//Funcion para mostrar los metodos de pago
+
+function showPagoTarjeta() {
+    element = document.getElementById("tarjetaCD");
+    element1 = document.getElementById("efectivo");
+    element.style.display = 'block';
+    element1.style.display = 'none';
+}
+
+function showPagoEfectivo() {
+    element = document.getElementById("tarjetaCD");
+    element1 = document.getElementById("efectivo");
+    element.style.display = 'none';
+    element1.style.display = 'block';
+}
+let integrantes = sumaIntegrantes(m, f);
 countMem(integrantes);

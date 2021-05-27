@@ -88,3 +88,40 @@ function solicitarDevolucion() {
         }
     });
 }
+
+function tarjetaAgregada() {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Método de pago agregado',
+        showConfirmButton: false,
+        timer: 1500
+    }).then(function() {
+        window.location = "index.html";
+    });
+
+}
+
+
+function procederPagoEfectivo() {
+    Swal.fire({
+        title: 'Pago en efectivo',
+        text: "Estoy consciente sobre la garantia de mi producto al realizar el pago en efectivo.",
+        icon: 'warning',
+        showCancelButton: true,
+        //width: '20%',
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'Cancelar',
+        confirmButtonText: 'Si, proceder.'
+
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Generado',
+                'Tu linea de captura fue generada',
+                'success'
+            )
+        }
+    });
+}
