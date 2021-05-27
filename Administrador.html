@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---No tocar-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="./img/LOGO.png">
     <link rel="stylesheet" href="./style/styleBase.css">
+    <!---No tocar-->
+    <link rel="stylesheet" href="./style/styleAdministrador.css">
     <title>ESCOMERCE</title>
 </head>
-<body id="index_body_container" class="body_container">
-    <header id="index_header_container" class="header_container"></header>
-
+<body id="administrador_body_container" class="body_container">
+    <header id="administrador_header_container" class="header_container"></header> 
     <!--Barra de Navegacion-->
     <!--Nombres id(NO SE REPITE): nombreDeLaVista_NombreCajitaPadre_NombreCajita_-->
     <!--Ej: id: base_navbar_container_-->
-    <nav id="index_navbar_container" class="navbar_container">
+    <nav id="Administrador_navbar_container" class="navbar_container">
         <div class="logo_container">
             <img class="logo" src="./img/LOGO.png" alt="EscomerceLogo">
             <img class="logo_letters" src="./img/LETRAS LOGO.png" alt="EscomerceLetras">
@@ -29,15 +31,39 @@
         <a class="head_cta" href="#"><button class="button_Carrito"><i class="far fa-shopping-cart"></i>  Carrito</button></a>
     </nav>
     <!--Vistas-->
-    <article id="index_main_container" class="main_container">
+    <article id="administrador_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <h1>Main</h1>
+        <h1>Administrador</h1>
+        <button id="consultar_producto_id12" class="boton_class_producto" style="margin-left:100px;" onClick="javascript:close_clip()">
+            <img src="img/img_Administrador/Consultar_Pedido.png" width="120px" height="100px" />
+            <h4>Consultar Producto</h4><br>
+            Puedes Consultar los productos existentes
+        </button>
+
+        <button id="eliminar_producto_id" class="boton_class_producto" style="margin-left:100px;" onClick="javascript:close_clip()">
+            <img src="img/img_Administrador/Eliminar_Producto.png" width="120px" height="100px" />
+                <h4>Eliminar Producto</h4><br>
+                Puedes Eliminar productos de la pagina 
+        </button>
+
+        <button id="consultar_Cuenta_id12" class="boton_class_cuenta" style="margin-left:100px;" onClick="javascript:close_clip()">
+            <img src="img/img_Administrador/Consultar_Cuenta.png" width="120px" height="100px" />
+            <h4>Consultar Cuentas</h4><br>
+                Puedes revisar Las cuentas existentes
+        </button>
+                
+        <button id="eliminar_cuenta_id12" class="boton_class_cuenta" style="margin-left:100px;" onClick="javascript:close_clip()">
+            <img src="img/img_Administrador/Eliminar_Cuenta.png" width="120px" height="100px" />
+                <h4>Eliminar Cuentas</h4><br>
+                Puedes Eliminar cuentas existentes de la DB   
+        </button>
+        
     </article>
     
     <!--Ignorar por el momento-->
     <aside class ="sidebar"></aside>
     
-    <footer id="index_footer_container" class="footer_container">
+    <footer id="base_footer_container" class="footer_container">
         <div class="foot_cta">
             <h3>Integrantes:</h3>
             <p id="numIntegrantes"></p>
@@ -59,6 +85,5 @@
 </body>
 <!--Colores https://paletton.com/ -->
 <!--Documentacion 1 https://developer.mozilla.org/es/ -->
-<!--Documentacion 2 https://www.w3schools.com/ -->   
-<!--Herramienta Vistas https://zeplin.io/--> 
+<!--Documentacion 2 https://www.w3schools.com/ -->    
 </html>
