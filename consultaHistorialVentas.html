@@ -33,27 +33,53 @@
     <article id="historialV_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
         <h1>Historial de Ventas</h1>
-        <form>
-            <label for="fechaV">Vendido el:</label>
-            <input type="fechaV" id="fechaV" placeholder="Fecha de la venta">
-
-            <label for="nombre">Nombre:</label>
-            <input type="nombre" id="nombre" placeholder="Producto vendido">
-
-            <label for="cantidad">Cantidad:</label>
-            <input type="cantidad" id="cantidad" class="input-ch" placeholder="Cantidad Vendida">
-
-            <label for="precio">Precio:</label>
-            <input type="precio" id="precio" class="input-ch"  placeholder="Precio por unidad">
+        <br>
+        <div id="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id Venta</th><th>Productos</th><th>Costo</th><th colspan="2">Total</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>#404444</td>
+                    <td><blockquote>1.-Calculadora Gráfica FX-9750GII</blockquote><blockquote>2.-Libro Física - Halliday, Resnick - 5ed</blockquote></td>
+                    <td><blockquote>1.- $ 350</blockquote><blockquote>2.- $ 150</blockquote></td>
+                    <td>$ 500</td>
+                    <td><input type="checkbox" name="eliminar"> </td>
+                </tr>
+                <tr>
+                    <td>#75055</td>
+                    <td><blockquote>1.-Compuerta 74ls04</blockquote>
+                    <td><blockquote>1.- $ 50</blockquote><blockquote>
+                    <td>$ 50</td>
+                    <td><input type="checkbox" name="eliminar"> </td>
+                </tr>
+                <tr>
+                    <td>#232342</td>
+                    <td><blockquote>1.-10 Jumpers</blockquote><blockquote>2.-20 Resistencias 1k ohms</blockquote><blockquote>3.-4 Caimanes M-H</blockquote></td>
+                    <td><blockquote>1.- $ 30</blockquote><blockquote>2.- $ 15</blockquote><blockquote>3.- $ 90</blockquote></td>
+                    <td>$ 135</td>
+                    <td><input type="checkbox" name="eliminar"> </td>
+                </tr>
+                <tr>
+                    <td>#7564343</td>
+                    <td><blockquote>1.-1 Protoboard</blockquote><blockquote>
+                    <td><blockquote>1.- $ 50</blockquote><blockquote>
+                    <td>$ 50</td>
+                    <td><input type="checkbox" name="eliminar"> </td>
+                </tr>
+            </table>
             <br>
-
-            <label for="total">Total:</label>
-            <input type="total" id="total" class="input-ch"  placeholder="Monto total">
-            <br>
-
-        </form>
+            <button onclick ="mensaje()">Eliminar Todo el Historial</button>
+            <button onclick ="mensaje()">Eliminar Elementos Selccionados</button>
+            <script>
+                function mensaje(){
+                    alert("Elementos Eliminados")
+                }
+            </script>
+        </div>
     </article>
-    
     <!--Ignorar por el momento-->
     <aside class ="sidebar"></aside>
     
