@@ -89,7 +89,7 @@ li, a{
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.button_Carrito:hover {
     background-color: aqua;
     color: black;
 }

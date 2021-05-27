@@ -1,9 +1,10 @@
 let m = 8;
 let f = 1;
-function sumaIntegrantes(val1,val2) {
-    let sumEq = val1+val2;
+
+function sumaIntegrantes(val1, val2) {
+    let sumEq = val1 + val2;
     //Mostrar un mensaje en pantalla
-    window.alert("¡Hola Guapetones! :)");
+    //window.alert("¡Hola Guapetones! :)");
     // Mostrar un mensaje en consola del numero de integrantes del equipo 
     console.log("Esto es una prueba: " + sumEq);
     return sumEq;
