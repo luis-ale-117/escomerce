@@ -7,7 +7,7 @@
 .formGeneral,.direccion{
     margin: auto;
     border-collapse: separate;
-  border-spacing:  15px;
+    border-spacing:  15px;
 }
 
 input{
