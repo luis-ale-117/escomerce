@@ -115,53 +115,53 @@
                                 maxlength="10" placeholder="telefono/celular" pattern="[0-9]+"></td>
                     </tr>
                     <tr>
-                        <td colspan="2" align="center">
-                            <div>
-                                <input type="checkbox" class="check" name="check" id="check" value="1"
-                                    onchange="javascript:showContent()" />
-                                <label for="check">AGREGAR DIRECCION (OPCIONAL) +</label>
-                                <div id="content" style="display: none;">
-                                    <table class="direccion">
-                                        <tr>
-                                            <td class="informacion"><label for="calle">calle: </label></td>
-                                            <td><input type="text" class="calle" name="calle" id="calle" autofocus
-                                                    placeholder="Nombre de la calle"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="informacion"><label for="noCalleExt">Numero exterior: </label>
-                                            </td>
-                                            <td><input type="text" class="noCalleExt" name="noCalleExt" id="noCalleExt"
-                                                    placeholder="Numero exterior"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="informacion"><label for="noCalleInt">Numero interiro: </label>
-                                            </td>
-                                            <td><input type="text" class="noCalleInt" name="noCalleInt" id="noCalleInt"
-                                                    placeholder="Numero interior"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="informacion"><label for="colonia">Colonia: </label></td>
-                                            <td><input type="text" class="colonia" name="colonia" id="colonia"
-                                                    placeholder="Colonia"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="informacion"><label for="alcaldia">Alcaldia: </label></td>
-                                            <td><input type="text" class="alcaldia" name="alcaldia" id="alcaldia"
-                                                    placeholder="Alcaldia"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="informacion"><label for="cp">C.P.: </label></td>
-                                            <td><input type="text" class="cp" name="cp" id="cp"
-                                                    placeholder="Codigo Postal" pattern="[0-9]{5}"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="informacion"><label for="referencias">referencias: </label></td>
-                                            <td><textarea name="referencias" rows="6" cols="35" maxlength="200"
-                                                    placeholder="Ejemplo: En la esquina hay un gimnasio"></textarea>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
+                        <td id="opciones" colspan="2" align="center">
+                            <input type="checkbox" class="check" name="check" id="check" value="1"
+                                onchange="javascript:showContent()" />
+                            <label class="opcionDireccion" for="check">AGREGAR DIRECCION (OPCIONAL) +</label>
+
+                            <div id="content" style="display: none;">
+                                <table class="direccion">
+                                    <tr>
+                                        <td class="informacion"><label for="calle">calle: </label></td>
+                                        <td><input type="text" class="calle" name="calle" id="calle" autofocus
+                                                placeholder="Nombre de la calle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="informacion"><label for="noCalleExt">Numero exterior: </label>
+                                        </td>
+                                        <td><input type="text" class="noCalleExt" name="noCalleExt" id="noCalleExt"
+                                                placeholder="Numero exterior"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="informacion"><label for="noCalleInt">Numero interiro: </label>
+                                        </td>
+                                        <td><input type="text" class="noCalleInt" name="noCalleInt" id="noCalleInt"
+                                                placeholder="Numero interior"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="informacion"><label for="colonia">Colonia: </label></td>
+                                        <td><input type="text" class="colonia" name="colonia" id="colonia"
+                                                placeholder="Colonia"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="informacion"><label for="alcaldia">Alcaldia: </label></td>
+                                        <td><input type="text" class="alcaldia" name="alcaldia" id="alcaldia"
+                                                placeholder="Alcaldia"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="informacion"><label for="cp">C.P.: </label></td>
+                                        <td><input type="text" class="cp" name="cp" id="cp" placeholder="Codigo Postal"
+                                                pattern="[0-9]{5}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="informacion"><label for="referencias">referencias: </label></td>
+                                        <td><textarea name="referencias" rows="6" cols="35" maxlength="200"
+                                                placeholder="Ejemplo: En la esquina hay un gimnasio"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -178,13 +178,12 @@
                                 placeholder="Confirma tu contraseña" pattern="[A-Za-z0-9]+"></td>
                     </tr>
                     <tr>
-                        <td colspan="2" align="center">
-                            <div>
+                        <td id="opciones" colspan="2" align="center">
                                 <input type="checkbox" class="check1" name="check1" id="check1" value="1"
                                     onchange="javascript:showContent1()" />
-                                <label for="check1">QUIERO SER VENDEDOR (OPCIONAL) +</label>
-                                <div id="content1" style="display: none;">
-                                    <table class="direccion">
+                                <label class="opcionTipoCuenta" for="check1">QUIERO SER VENDEDOR (OPCIONAL) +</label>
+                                <div id="content1">
+                                    <table id="direccion">
                                         <tr>
                                             <td class="informacion"><label for="ine">INE: </label></td>
                                             <td><input type="file" accept="application/pdf" class="ine" name="ine"
