@@ -59,6 +59,8 @@ function agregarProducto() {
         title: 'Tu producto ha sido publicado',
         showConfirmButton: false,
         timer: 1500
+    }).then(function() {
+        window.location = "index.html";
     });
 }
 
@@ -80,7 +82,9 @@ function solicitarDevolucion() {
                 'Enviada',
                 'Tu solicitud fue enviada',
                 'success'
-            )
+            ).then(function() {
+                window.location = "index.html";
+            });
         }
     });
 }
