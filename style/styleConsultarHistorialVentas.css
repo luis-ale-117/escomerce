@@ -1,55 +1,46 @@
 h1 {
     color: rgb(0, 60, 151);
 }
-form{
-    background-color:#106193;
+#tabla{
+    margin: auto;
     width: auto;
-    border: 1px solid #ccc;
-    margin: 20px;
-    padding: 20px;
 }
-label{
-    font-size:18px;
-    display:block;
+table{
+    background-color: rgba(37, 57, 82, 0.5);
     width: 100%;
 }
-input, textarea{
-    margin-bottom: 20px;
-    width:50%;
-    padding:10px;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    background-color: rgb(202, 218, 243);
+th, td{
+    border: 1px solid rgb(0, 0, 0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
 }
-input:focus,textarea{
-    border: 1px solid #ccc;
+th{
+    text-align: center;
 }
-textarea{
-    resize: vertical;
-    max-height: 105px;
-    min-height: 100px;
-}
-input[type="submit"]{
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.603);
+thead{
+    background-color: rgb(0, 104, 165);
+    border-bottom: solid 5px rgb(184, 184, 184);
     color: rgb(255, 255, 255);
-    border: none;
 }
+tr:nth-child(even){
+    background-color: rgba(37, 57, 82, 0.5);
+}
+tr:hover{
+    background-color: rgb(72, 156, 177);
+    color:rgb(0, 0, 0);
+}
+ul{
+    padding: 0;
+    margin:0;
+}
+button{
 
-input[type="submit"]:hover{
-    background:rgb(0, 183, 255);
-    cursor:pointer;
-}
-
-.input-ch{
-    width: 15%;
-}
-.input-med{
-    width: 20%;
-}
-.cambiarI{
-    background-color:#106193;
+    color: aliceblue;
+    padding: 9px 25px;
+    background-color: rgb(0, 91, 133);
     border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s
 }
