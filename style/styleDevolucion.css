@@ -1,15 +1,26 @@
-#datos_dev_container img{
-    width: 15%;
-    height: auto;
-    float: right;
-    margin-right: 10em;
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
 }
-#motivo_dev_container{
-    margin-top: 2em;
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
 }
-#datos_dev_container{
-    text-align:center;
+
+.condicionesProductoForm {
+    columns: 4;
 }
-#motivo{
-    width: 50%;
+
+.categoriaProductoForm {
+    columns: 2;
+}
+
+.input-group {
+    columns: 2;
+}
+
+.imagenesProductoForm {
+    color: black;
 }
