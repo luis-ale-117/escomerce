@@ -1,76 +1,72 @@
+#registro{
+    font-size: 13px;
+    margin: auto;
+    width: 400px;
+    border: rgba(109, 226, 236, 0.144) 8px outset;
+}
+.formGeneral,.direccion{
+    margin: auto;
+    border-collapse: separate;
+    border-spacing:  15px;
+}
+
+input{
+    width: 100%;
+}
+
+input:invalid{
+    color: red;
+}
+
+#button{
+    width: 70px;
+    background-color: rgba(32, 71, 71, 0);
+}
+
+.informacion{
+    text-align: right;
+}
+.logint{
+    font-size: 15px;
+}
+.login{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.login:hover{
+    color: blue;
+    text-decoration: underline;
+    font-size: 17px;
+}
+/*==============Direccion==================*/
+.check,.check1{
+    display: none;
+}
+
+input[type="checkbox"] + label{
+    cursor: pointer;
+}
+
 /*==============MENU==================*/
-@media (min-width: 150px){
-    .menu{
-        width: 2.2rem;
+.menu {
+    width: 2.2rem;
     height: 2.7rem;
     box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
     background-color: rgba(66, 66, 72,0.9);
     border-radius: 0.5rem;
-    position: absolute;
-    top: 1rem;
-    left: 0.5rem;
+    position: fixed;
+    top: 50%;
+    left: 5%;
     font-size: 2rem;
     color: aliceblue;
     text-align:center;
-    transition: top 0.7s;
-    }
-
-    .logo{
-        margin-left: 2.7rem;
-    }
-    .logo_letters{
-        position: absolute;
-        top: -50px;
-        transition: top 0.7s;
-    }
-    .navbar_links{
-        position: absolute;
-        top: -50px;
-        transition: top 0.7s;
-    }
-}
-
-@media(min-width:900px){
-    .menu{
-        top: -50px;
-        transition: top 0.7s;
-    }
-    .logo_letters {
-        margin-top: auto;
-        cursor: pointer;
-        width: 8.9rem;
-        height: 1.5rem;
-        top: 1.5rem;
-        margin-left: 1rem;
-        margin-bottom: .6rem;
-    }
-    .navbar_links {
-        list-style-type: none;
-        position: relative;
-        top: 0;
-        margin-right: 100px;
-    }
-    
-    .navbar_links li {
-        display: inline-block;
-        padding: 0px 20px;
-    }
-    
-    .navbar_links li a {
-        transition: all 0.3s ease 0s;
-        color: aliceblue;
-    }
-    
-    .navbar_links li a:hover {
-        color: aqua;
-    }
-
+    transition: left 0.7s;
 }
 
 .checkbox:checked ~ .menu {
     left: 40%;
     border-radius: 0 0.5rem 0.5rem 0;
-    transition: left 0.7s;
 }
 
 .left-panel{
