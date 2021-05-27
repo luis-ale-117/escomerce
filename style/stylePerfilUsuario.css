@@ -1,3 +1,10 @@
+.main_container {
+    color: #212529;
+}
+li, a{
+    text-decoration: none;
+    color: #212529;    
+}
 /*Correcion de los ul*/
 ul {
     list-style-position: inside;
