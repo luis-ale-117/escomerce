@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="./img/LOGO.png">
     <link rel="stylesheet" href="./style/styleBase.css">
-    <link rel="stylesheet" href="./style/styleEditarProducto.css">
+    <link rel="stylesheet" href="./style/styleConsultarHistorialVentas.css">
     <title>ESCOMERCE</title>
 </head>
-<body id="editarP_body_container" class="body_container">
+<body id="historialV_body_container" class="body_container">
     <header id="base_header_container" class="header_container"></header>
 
     <!--Barra de Navegacion-->
     <!--Nombres id(NO SE REPITE): nombreDeLaVista_NombreCajitaPadre_NombreCajita_-->
     <!--Ej: id: base_navbar_container_-->
-    <nav id="editarP_navbar_container" class="navbar_container">
+    <nav id="historialV_navbar_container" class="navbar_container">
         <div class="logo_container">
             <img class="logo" src="./img/LOGO.png" alt="EscomerceLogo">
             <img class="logo_letters" src="./img/LETRAS LOGO.png" alt="EscomerceLetras">
@@ -30,43 +30,39 @@
         <a class="head_cta" href="#"><button class="button_Carrito"><i class="far fa-shopping-cart"></i>  Carrito</button></a>
     </nav>
     <!--Vistas-->
-    <article id="editarP_main_container" class="main_container">
+    <article id="historialV_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <h1>Editar Información de un Producto</h1>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="nombre" id="nombre">
+        <h1>Historial de Ventas</h1>
+        <form>
+            <label for="fechaV">Vendido el:</label>
+            <input type="fechaV" id="fechaV" placeholder="Fecha de la venta">
 
-                <label for="descripcion">Descripción:</label>
-                <textarea id="descrpcion"></textarea>
+            <label for="nombre">Nombre:</label>
+            <input type="nombre" id="nombre" placeholder="Producto vendido">
 
-                <label for="condicion">Condición:</label>
-                <input type="condicion" id="condicion" class="input-med">
+            <label for="cantidad">Cantidad:</label>
+            <input type="cantidad" id="cantidad" class="input-ch" placeholder="Cantidad Vendida">
 
-                <label for="stock">Stock:</label>
-                <input type="stock" id="stock" class="input-ch">
+            <label for="precio">Precio:</label>
+            <input type="precio" id="precio" class="input-ch"  placeholder="Precio por unidad">
+            <br>
 
-                <label for="precio">Precio:</label>
-                <input type="precio" id="precio" class="input-ch">
-                <br>
+            <label for="total">Total:</label>
+            <input type="total" id="total" class="input-ch"  placeholder="Monto total">
+            <br>
 
-                <label for="imgen">Cambiar Imagen:</label>
-                <input type="file" id="imagen" class="cambiarI">
-
-
-                <input type="submit" value="Guardar">
-                </form>
+        </form>
     </article>
     
     <!--Ignorar por el momento-->
     <aside class ="sidebar"></aside>
     
-    <footer id="editarP_footer_container" class="footer_container">
+    <footer id="historialV_footer_container" class="footer_container">
         <div class="foot_cta">
             <h3>Integrantes:</h3>
             <p id="numIntegrantes"></p>
             <!--Aquí escriban sus nombres-->
-            <ul id="editarP_Footer_miembros" class="miembros">
+            <ul id="historialV_Footer_miembros" class="miembros">
                 <li><a href="https://github.com/SheraniVM">Sherani Vázquez Medina</a></li>
                 <li><a href="https://manuosmx.github.io/manu/">Manuel Eduardo Ortiz Salazar</a></li>
                 <li><a href="https://github.com/Daniel-GB0319">Geovanni Daniel Gonzalez Barrientos</a></li>
