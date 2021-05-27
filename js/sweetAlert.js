@@ -61,3 +61,26 @@ function agregarProducto() {
         timer: 1500
     });
 }
+
+function solicitarDevolucion() {
+    Swal.fire({
+        title: 'Estas a punto de enviar la solicitud de devolución',
+        text: "El proceso demora hasta tres dias",
+        icon: 'question',
+        showCancelButton: true,
+        //width: '20%',
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'Cancelar',
+        confirmButtonText: 'Si, enviar'
+
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Enviada',
+                'Tu solicitud fue enviada',
+                'success'
+            )
+        }
+    });
+}
