@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="./style/styleSideBar.css">
     <link rel="stylesheet" href="./style/styleBase.css">
     <link rel="stylesheet" href="./style/styleBusqueda.css">
+    <link rel="stylesheet" href="./style/styleMetodosDePago.css">
     <title>ESCOMERCE</title>
 </head>
 
-<body id="busqueda_body_container" class="body_container">
-    <header id="busqueda_header_container" class="header_container"></header>
+<body id="metodosPago_body_container" class="body_container">
+    <header id="metodosPago_header_container" class="header_container"></header>
 
     <!--Barra de Navegacion-->
     <!--Nombres id(NO SE REPITE): nombreDeLaVista_NombreCajitaPadre_NombreCajita_-->
@@ -55,7 +56,7 @@
         </div>
         <ul class="navbar_links">
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./login.html">Login</a></li>
+            <li><a href="./myAccount.html   ">Perfil</a></li>
             <li><a href="./catalogo.html">Catalogo</a></li>
         </ul>
 
@@ -63,46 +64,65 @@
         <a class="head_cta" href="#"><button class="button_Carrito"><i class="far fa-shopping-cart"></i>  Carrito</button></a>
     </nav>
     <!--Vistas-->
-    <article id="busqueda_main_container" class="main_container">
+    <article id="metodosPago_main_container" class="main_container">
         <!--Contenido aquí agregarán todas sus vistas-->
-        <div class="buscar">
-            <input type="text" class="buscar_texto" placeholder="Buscar productos">
-            <!--Cambiar el place holder por lo que se va a buscar-->
-            <a href="#" class="btn_buscar" id="buscar"><i class="fas fa-search"></i></a>
-        </div>
-        <h4>Recomendados para ti</h4>
-        <div class="card-group">
-            <div class="card" style="width: 18rem;">
-                <img src="./img/libros.jpg" class="card-img-top" alt="Libros">
-                <div class="card-body">
-                    <h5 class="card-title">Libros</h5>
-                    <p class="card-text">Encuentra libros para todas tus materias!</p>
-                    <a href="./catalogo.html#catalogo-libros" class="btn btn-primary">Ver</a>
+        <div>
+            <br>
+            <h2>Selecciona el metodo de pago</h2>
+            <br><br>
+            <tr>
+                <td><button onclick="showPagoTarjeta()" type="button" class="btn btn-primary">Pago con tarjeta</button></td>
+                <td><button onclick="showPagoEfectivo()" name="botonEfectivo" type="button" class="btn btn-secondary">Pago en efectivo</button></td>
+            </tr>
+            <br><br>
+            <div id="tarjetaCD" style="display:none;">
+                <div id="numTarjetaBox">
+                    <div class="input-group input-group mb-3" style>
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Tarjeta</span>
+                        <input id="numTarjeta" placeholder="Ingresa el numero de la tarjeta" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing">
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./img/materiales_electronica.jpg" class="card-img-top" alt="Materiales de electrónica">
-                <div class="card-body">
-                    <h5 class="card-title">Materiales de electrónica</h5>
-                    <p class="card-text">Material nuevo y usado para tus laboratorios de electrónica</p>
-                    <a href="./catalogo.html#catalogo-electronicos" class="btn btn-primary">Ver</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./img/nenis.jpg" class="card-img-top" alt="Artículos varios">
-                <div class="card-body">
-                    <h5 class="card-title">Miscelánea</h5>
-                    <p class="card-text">Aquí hay más que solo artículos escolares.</p>
-                    <a href="./catalogo.html#catalogo-miscelanea" class="btn btn-primary">Ver</a>
-                </div>
-            </div>
-        </div>
+                <br>
+                <div id="fechaTarjetaBox">
+                    <div class="input-group input-group mb-4" style>
+                        <span class="input-group-text" id="inputGroup-sizing">Fecha expiración</span>
+                        <input id="mmTarjeta" placeholder="MM" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input id="aaTarjeta" placeholder="AA" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="ccvTarjetaBox">
+                        <input id="ccvTarjeta" placeholder="CCV" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
 
+                </div>
+                <br>
+                <div id="nombreTarjetaBox">
+                    <div class="input-group input-group mb-3" style>
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                        <input id="nombreTarjeta" placeholder="Nombre que aparece en la tarjeta " type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing">
+                    </div>
+                </div>
+                <br>
+                <button onclick="tarjetaAgregada()" type="button" class="btn btn-success">Agregar metodo de pago</button>
+            </div>
+            <div id="efectivo" style="display:none;">
+                <div id="pagoOxxoBox" class="card" style="width: 13rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Oxxo_Logo.svg/1280px-Oxxo_Logo.svg.png" class="card-img-top" alt="logoOxxo">
+                    <div class="card-body">
+                        <h5 class="card-title">Pagar en OXXO</h5>
+                        <p id="textoCardOxxo" class="card-text">Tu pago sera aprobado entre 24 y 48 horas.*</p>
+                    </div>
+                </div>
+                <br><br>
+                <a onclick="procederPagoEfectivo()" class="btn btn-success">Proceder al pago</a>
+                <br><br>
+                <h6>Se va a generar un archivo con una linea de captura para que puedas realizar el pago en tu tienda OXXO más cercana.</h6>
+                <p class="notasOxxo">*El envio será realizado una vez aprobado el pago. </p>
+
+            </div>
+        </div>
 
     </article>
 
-    <!--Ignorar por el momento-->
-    <aside class="sidebar"></aside>
 
     <footer id="busqueda_footer_container" class="footer_container">
         <div class="foot_cta">
@@ -114,7 +134,6 @@
                 <li><a href="https://manuosmx.github.io/manu/">Manuel Eduardo Ortiz Salazar</a></li>
                 <li><a href="https://github.com/Daniel-GB0319">Geovanni Daniel Gonzalez Barrientos</a></li>
                 <li><a href="https://github.com/luis-ale-117">Luis Alejandro Mendoza Franco</a></li>
-					<li><a href="#">Abner Eliezer Robles Diaz</a></li>
             </ul>
         </div>
         <div class="copyright">
@@ -122,7 +141,10 @@
         </div>
     </footer>
     <!--Aquí se agregarán los js-->
+    <script src="./js/main.js"></script>
     <script src="./js/buscador.js"></script>
+    <script src="./js/sweetAlert.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 <!--Colores https://paletton.com/ -->
 <!--Documentacion 1 https://developer.mozilla.org/es/ -->
